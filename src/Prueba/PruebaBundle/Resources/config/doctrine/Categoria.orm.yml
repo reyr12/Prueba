@@ -1,0 +1,19 @@
+Prueba\PruebaBundle\Entity\Categoria:
+    type: entity
+    table: null
+    repositoryClass: Prueba\PruebaBundle\Repository\CategoriaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '20'
+oneToMany:
+    productos:
+    targetEntity: Prueba\PruebaBundle\Entity\Productos
+    mappedBy: Categoria
+lifecycleCallbacks: {  }

@@ -1,0 +1,11 @@
+prueba_productos:
+    resource: "@PruebaBundle/Resources/config/routing/productos.yml"
+    prefix:   /productos
+
+prueba_categoria:
+    resource: "@PruebaBundle/Resources/config/routing/categoria.yml"
+    prefix:   /categoria
+
+prueba_homepage:
+    path:     /
+    defaults: { _controller: PruebaBundle:Default:index }

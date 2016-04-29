@@ -1,0 +1,27 @@
+Prueba\PruebaBundle\Entity\Productos:
+    type: entity
+    table: null
+    repositoryClass: Prueba\PruebaBundle\Repository\ProductosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '20'
+        precio:
+            type: integer
+        descripcion:
+            type: string
+            length: '20'
+manyToOne:
+    categoria:
+        targetEntity: Prueba\PruebaBundle\Entity\Categoria
+        inversedBy: productos
+        joinColumn:
+                name: categoria_id
+                referencedColumnName: id
+lifecycleCallbacks: {  }
