@@ -28,6 +28,10 @@ class CategoriaController extends Controller
             'categorias' => $categorias,
         ));
     }
+    public function olaAction()
+    {
+        //saludo desde controlador
+    }
 
     /**
      * Creates a new Categoria entity.
